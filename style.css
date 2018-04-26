@@ -1,7 +1,7 @@
  header {
   text-align: center;
     color:white;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Pacifico', cursive;
     font-weight: lighter;
     grid-area: header;
@@ -15,6 +15,7 @@ body {
     background: linear-gradient(90deg, #816C5B, #A9A18C, #816C5B);
     color: white;
    font-family: 'Poiret One', cursive;
+   font-size:1.2em;
    
  
 }
@@ -28,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.9em;
+    font-size: 1em;
     color:#83929F;
     text-align:center;
    font-family: 'Poiret One', cursive;
@@ -60,7 +61,7 @@ h4 {
 footer {
 grid-area:footer;
 font-family: 'Poiret One', cursive;
-font-size:1.2em;
+font-size:.9em;
 
 
     
@@ -70,6 +71,7 @@ a {
     color:white;
     text-decoration:none;
     font-family: 'Poiret One', sans;
+    font-size:.9em;
 }
 
 a:hover {
@@ -132,7 +134,7 @@ nav a {
               "main main main"
             "left middle right"
             "leftt middlee rightt"
-            "foot foot foot";
+            "footer footer footer";
         grid-column-gap: 1em;
           grid-row-gap: .5em;
          font-family: 'Poiret One', cursive;
@@ -142,7 +144,7 @@ nav a {
 }
 article{
       text-align:center;
-    font-size: 2em;
+    font-size: 1em;
     background: linear-gradient(90deg, #816C5B, #A9A18C, #816C5B);
     color: white;
    font-family: 'Poiret One', cursive;
@@ -151,21 +153,21 @@ article{
 }
    .grid {
       display: grid;
-      grid-gap: 3em;
-      grid: "header header header"
-      "article article aside"
-      "footer footer footer"
-   }
-
+      grid-gap: 1em;
+      grid: "header"
+      "article"
+      "aside"
+"footer"
+}
    header, aside, article, footer {
       grid-column: 1 / 3;
    }
 
   
    aside {
-       height:15em;
-       font-size:1.4em;
-       width:100%;
+       
+       font-size:1em;
+       
    }
 
    header, article, aside, footer {
@@ -236,6 +238,10 @@ width:auto;
 @media all and (min-width: 58em) { 
     .content-flex-container { flex-direction: column; }
      header, article, aside, footer { margin:.8em; }
+     header, article, aside, footer { grid-gap:2em; }
+     grid: "header header header"
+     "article article aside"
+     "footer footer footer"
      
   
   
