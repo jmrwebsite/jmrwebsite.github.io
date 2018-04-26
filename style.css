@@ -178,6 +178,7 @@ article{
       justify-content: center;
       padding:.5em;
       border-radius: 3em;
+       line-height: 1.2em;
    }
 
    @media all and (min-width: 58em) { 
@@ -194,7 +195,7 @@ article{
       grid: 
       "one two three"
       "four five six";
-     grid-column-gap: .2em;
+          grid-column-gap: .2em;
           grid-row-gap: .2em;
          font-family: 'Poiret One', cursive;
          
@@ -239,9 +240,11 @@ width:auto;
     .content-flex-container { flex-direction: column; }
      header, article, aside, footer { margin:.8em; }
      header, article, aside, footer { grid-gap:2em; }
-     grid: "header header header"
+     header, article, aside, footer { padding:1em; }
+       header, article, aside, footer { line-height:1.4em; }
+          grid { grid: "header header header"
      "article article aside"
-     "footer footer footer"
+     "footer footer footer" }
      
   
   
