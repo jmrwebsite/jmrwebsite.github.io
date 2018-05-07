@@ -273,7 +273,6 @@ width:auto;
 }
 
 @media screen and (min-width: 58em) {
-  .topnav.responsive {position: none;}
   .topnav.responsive .icon {
    display:none;}
   }
@@ -314,7 +313,7 @@ width:auto;
 *, *:before, *:after {box-sizing:  border-box !important;}
 
 
-thing {
+cards {
   column-width: 13em;
   column-gap: 1em;
 }
@@ -325,7 +324,7 @@ section {
  padding:  1rem;
  width:  100%;
   background: #454647;
-  border-radius: 1em;
+  border-radius: 1em; 
 }
 
 
